@@ -12,7 +12,7 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
         registry
                 // Enable cross-origin request handling for the specified path pattern.
                 // Exact path mapping URIs (such as "/admin") are supported as well as Ant-style path patterns (such as "/admin/**").
-                .addMapping("/*")
+                .addMapping("/**")
                 .allowedOrigins("*")
                 // .allowedOriginPatterns("")
                 .allowCredentials(false)
